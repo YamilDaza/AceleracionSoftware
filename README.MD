@@ -58,3 +58,18 @@
 
 
 
+## Parámetro y Argumentos -----------------------------------------------------------------
+   *Parámetros*
+   - Todas las functiones pueden tener parametros
+   - Los parámetros son accesibles como variables en el cuerpo de la función
+   - Los parametros son creados cuando declaramos una function -> function nombreFunction(parametroA, parametroB){}
+   - Podemos establecer valores por defecto para los parametros -> function nombreFunction(parametroA = 12, parametroB = 2){}
+
+   *Argumentos*
+   - Los argumentos son los valores que le pasamos a una función en su invocación -> nombreFunción(argumento1, argumento2);
+   - Tener en cuenta la cantidad de argumentos que espera recibir una función para no tener errores. Misma cantidad de parámetros, misma cantidad de argumentos.
+
+   *Podemos usar estructuras de control para validar los datos enviado y/o recibidos a una función*
+
+
+

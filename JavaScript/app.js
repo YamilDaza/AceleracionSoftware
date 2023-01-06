@@ -1,4 +1,4 @@
-//Clase 1 <Script></Script> ->  va en el head y no en el body. Poner el metodo defer.
+//Clase 1 <Script></Script> ->  va en el head y no en el body. Poner el metodo defer. =========================
 
 /* const title = document.querySelector('h1');
 title.textContent += 'World';
@@ -7,7 +7,7 @@ console.log(title); */
 
 
 
-//Clase 2 - Declaración e Inicialización de variables y Hoisting
+//Clase 2 - Declaración e Inicialización de variables y Hoisting ===============================
 
 /* var favorite; // Js le pone undefined
 console.log(favorite); // Referencia a la variable favorite que tiene como valor undefined
@@ -33,7 +33,7 @@ function saludar(){
 
 
 
-//Clase 3 - Variables con let y ambito
+//Clase 3 - Variables con let y ambito ============================================
 /* var nombre = 'Yamil'; 
 function saludar(){ // Las funciones si pueden mirar hacia arriba y ver y/o utilizar las variables en el ambito global
    var nombre = 'Belen'; //Esto esta declarado dentro de la function y solo puede ser usada en la misma function o funciones interiores
@@ -56,8 +56,8 @@ saludar();
 } */
 
 
-//Clase 4 - Constantes
-const MY_AGE = 24;
+//Clase 4 - Constantes =========================================================
+/* const MY_AGE = 24;
 //MY_AGE = '24 years'; // typeError -> no podemos reasignar variable constantes
 console.log(MY_AGE); // Referencia a la constante MY_AGE
 
@@ -66,8 +66,25 @@ const USER = { fullName: 'Yamil Daza' };
 USER.fullName = 'Developer Yamil Daza';
 
 console.log(USER.fullName); 
+ */
 
 
+
+
+// Parámetro y Argumentos ========================================================
+/* function sumar(numero1, numero2){ //numero1 y numero2, son los parámetro que podemos usar como variables dentro de la función
+   return numero1 + numero2;
+}
+
+const RESULTADO_SUMA = sumar(10, 2) // 10 y 2 son argumentos 
+console.log(RESULTADO_SUMA);
+
+function restar(x,b){
+   return x - b;
+}
+
+// podemos pasar como valor de argumento undefined.
+console.log(restar(1)); //ESto nos da Nan porque estamos realizando una resta con un numero y un valor undefined */
 
 
 
