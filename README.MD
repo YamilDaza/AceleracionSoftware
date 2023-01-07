@@ -26,19 +26,19 @@
 
 
 ## Alzado o Hoisting -----------------------------------------------------------------
-   - JavaScript es un lenguaje con tipos dinamicos, es decir, podemos asignar y reasignar diferentes tipos a una misma variable.
+   - JavaScript es un lenguaje con tipado dinamico, es decir, podemos asignar y reasignar diferentes tipos de datos a una misma variable.
    - Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
       * var nombreVariable -> Declaración
       * nombreVariable = 12 -> Inicialización
       * nombreVariable = "Hola" -> Reasignación.
 
-   - Cuando declaramos una variable sin ningun dato inicializado, JavaScript lo declara como undefined, es decir, variable creado en memoria pero no esta definida en cuanto dato.
+   - Cuando declaramos una variable sin ningun dato inicializado, JavaScript lo declara como undefined, es decir, variable creado en memoria pero no esta definida en cuanto a dato.
 
    ### Hoisting
    - JavaScript alza por encima de todo nuestro codigo, todas las variables declaradas con Var y las inicializa con el valor undefined.
    - JavaScript alza todo el cuerpo de las funciones declaradas con 'function' por encima de todo nuestro codigo. 
    - Todo esto lo realiza internamente.
-   - ReferenceError: Es cuando queremos usar la referencia a un identificador no creado
+   - ReferenceError: Es cuando queremos usar la referencia a un identificador no creado, es decir, a una variable no declarada.
    - Console.log('variable') -> esto es una referencia a una variable
 
 
@@ -70,6 +70,29 @@
    - Tener en cuenta la cantidad de argumentos que espera recibir una función para no tener errores. Misma cantidad de parámetros, misma cantidad de argumentos.
 
    *Podemos usar estructuras de control para validar los datos enviado y/o recibidos a una función*
+
+
+
+
+## Funciones en JavaScript -----------------------------------------------------------------
+   - En JavaScript hay 3 formas de crear funciones:
+      1) Funciones declaradas, estas requieren un identificador y son alzadas -> function identificadorUnico_Nombre(parametro o no){};
+      2) Expresión funcional, que consiste en asociar una funcion en una variable. No son alzadas. -> const identificador = function (){};
+      3) Funciones Flecha, No disponen contexto de THIS, disponen de retorno implicito y NO SE ALZAN -> const saludar = () => {};
+
+
+
+
+## Parametros y Argumentos REST -----------------------------------------------------------------
+   - Con los parámetros REST podemos aceptar cualquier numero de parámetros en una función.
+   - Estos parámetros REST deben declararse al final de los parametros habituales. -> function nombre(parametro1, parametro2, ...todosLosParametros){}
+   - Los parametros REST siempre los veras dentro de los parametros de una función.
+
+   *Object arguments no es una matriz y por lo tanto no podemos usar metodos de una matriz*
+
+
+
+
 
 
 

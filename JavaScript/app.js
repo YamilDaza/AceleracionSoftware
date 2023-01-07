@@ -33,7 +33,8 @@ function saludar(){
 
 
 
-//Clase 3 - Variables con let y ambito ============================================
+
+// Clase 3 - Variables con let y ambito ============================================
 /* var nombre = 'Yamil'; 
 function saludar(){ // Las funciones si pueden mirar hacia arriba y ver y/o utilizar las variables en el ambito global
    var nombre = 'Belen'; //Esto esta declarado dentro de la function y solo puede ser usada en la misma function o funciones interiores
@@ -56,7 +57,10 @@ saludar();
 } */
 
 
-//Clase 4 - Constantes =========================================================
+
+
+
+// Clase 4 - Constantes =========================================================
 /* const MY_AGE = 24;
 //MY_AGE = '24 years'; // typeError -> no podemos reasignar variable constantes
 console.log(MY_AGE); // Referencia a la constante MY_AGE
@@ -71,7 +75,8 @@ console.log(USER.fullName);
 
 
 
-// Parámetro y Argumentos ========================================================
+
+// clase 5 - Parámetro y Argumentos ========================================================
 /* function sumar(numero1, numero2){ //numero1 y numero2, son los parámetro que podemos usar como variables dentro de la función
    return numero1 + numero2;
 }
@@ -85,6 +90,77 @@ function restar(x,b){
 
 // podemos pasar como valor de argumento undefined.
 console.log(restar(1)); //ESto nos da Nan porque estamos realizando una resta con un numero y un valor undefined */
+
+
+
+
+
+// clase 6 -> Funciones ======================================================== 
+/* 
+- Funciones declaradas: 
+function saludar(){
+   console.log('Hello world');
+}
+saludar(); // Invocación de la funcion declarada creada
+
+
+- Expresion funcional:
+const saludar = function(){
+   console.log('Hello world');
+}
+saludar();
+
+
+
+- Funciones Flecha:
+const saludar = () => {
+   console.log('Hello world')
+}
+saludar();
+*/
+
+
+
+
+// clase 7 -> Parametros y argumentos REST ======================================================== 
+/* function checkOut(...prices){
+   Array.isArray(prices);
+   const total = prices.reduce((acc, curr) => acc + curr)
+} 
+
+// SIN PARAMETROS REST
+function checkOut(pr1, pr2, pr3){
+   const total = pr1 + pr2 + pr3;
+   console.log(total)
+};
+checkOut10(10,33,12); //10 : pr1 - 33 : pr2 - 12 : pr3;
+
+// CON PARAMETROS REST
+function checkOut(...prices){
+   console.log(prices) -> [10, 33, 41, 1]
+}
+checkOut(10,33,41,1); //Cada uno de los argumentos van para prices, y JS lo almacena en una matriz
+
+
+// EJEMPLO:
+function sumarNumeros(...numeros){
+   let total = 0;
+   for (let i = 0; i < numeros.length; i++) {
+      total += numeros[i];
+   }
+   console.log(total);
+}
+sumarNumeros(5, 2, 1, 8, 12);
+
+
+//Esto no es recomendado, pero es bueno saberlo.
+function calculadora(){
+   const numeros = Array.from(arguments); -> Esto convierte en matriz
+   const total = numeros.reduce((acc, curr) => acc + curr);
+   console.log(total);
+}
+calculadora(10, 3, 12, 4); 
+*/
 
 
 
