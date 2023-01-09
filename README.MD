@@ -94,5 +94,43 @@
 
 
 
+## Return Valor ------------------------------------------------------------------------------
+   - A no ser que seamos explicitos, las funciones JavaScript retornan undefined(*implicit return*)
+   - Ahora bien, si especificamos algo que retornar, la función realiza la tarea para la que fue creada y retorna dicho valor.
+
+
+
+
+## CLOSURES ------------------------------------------------------------------------------
+   - Es una caracteristica de JavaScript, es importante entenderlo para lograr tener el beneficio de los CLOSURES.
+   - CLOSURE: es retornar una función dentro otra función con acceso al entorno de variables de un ámbito exterior. Esto quiere decir que yo puedo retornar una función dentro de otra, y puedo usar las variables que esten por encima de la función que retornar(función hija).
+
+   Ejemplo:
+      function soyUnClosures(){
+         //Algo...
+         return function(){
+            return algo...
+         }
+      }
+
+   - Cada closure retornado es independiente al anterior, es decir, forman un nuevo ambito.
+   - Eso si, un closure puede modificar el estado atrapado en su interior. ***
+
+
+
+
+## IIFE ------------------------------------------------------------------------------
+   - EXPRESIONES FUNCIONALES INMEDIATAMENTE INVOCABLES
+   - Lo parte más importante es inmediatamente.
+   - Para crear un IIFE debemos envolver una function con el operador de agrupación -> (function(){})
+
+
+
+
+
+
+
+
+
 
 

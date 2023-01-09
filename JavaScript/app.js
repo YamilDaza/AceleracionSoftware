@@ -166,4 +166,91 @@ calculadora(10, 3, 12, 4);
 
 
 
+// clase 8 -> valor Return ======================================================== 
+/* function checkOut(name, ...prices){
+   const total = prices.reduce((acc,curr) => {
+      //Al poner las llaves ya no tenemos return explicito, por lo tanto, ponemos la palabra return
+      return acc + curr;
+   })
+   return `${name} a gastado $${total}`;
+}
+
+console.log(checkOut('Yamil', 76, 89, 43, 1023)); */
+
+
+
+
+
+
+// clase 9 -> CLOSURES ======================================================== 
+
+/* function aleatorio(){
+   const valor = Math.random();
+   console.log(valor);
+}
+
+aleatorio(); */
+
+/* function soyUnClosure(){
+   const variableLocal = 'Yamil';
+   return function(){
+      return variableLocal.toUpperCase();
+   }
+}
+
+const closure = soyUnClosure(); //Todavia no hemos ejecutado la funcion interna
+console.log(closure()); //Invocación de la function de retorno - CLOSURE */
+
+//EJEMPLO - CLOSURE:
+/* function pedirPizza(UID){
+   //*** Ejemplo con modificación de estado:
+   let cantidadPizzas = 0;
+
+   const pedido = `Pedido_${UID}`;
+   return function(pizza){
+      cantidadPizzas++;
+      return `${pedido} -> ${pizza} - cantidad de pizzas: ${cantidadPizzas}`;
+   }
+}
+
+const pedidoUID = pedirPizza(4123);
+console.log(pedidoUID('Muzzarela'));
+console.log(pedidoUID('Calabaza'));
+console.log(pedidoUID('Especial')); */
+
+/* // * Mas ejemplos:
+function counter(){
+   //THIS ES EL CONTEXTO GLOBAL, si ponemos this en vez de let, el cambio de ejecuta globalmente, es decir, en cualquier variable que lo ejecute.
+   let i = 0; //Esta variable esta en el ambito dentro de la función - ESTADO
+   return () => { //CLOSURE
+      console.log(`Me ejecuto ${++i}`) // ++i primero se incrementa
+   }
+}
+
+const c = counter();
+const d = counter(); //Este es independiente de C
+
+const resultado = c(); //Aca seria undefined ya que no tenemos un retorno 
+console.log(resultado)
+c(); //Valor 1
+c(); //Valor 2
+d(); //Valor 1 */
+
+
+
+
+
+
+// clase 10 -> IIFE ======================================================== 
+(function(){
+   //Haz cosas...
+})();
+
+
+
+
+
+
+
+
 
