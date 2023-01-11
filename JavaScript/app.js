@@ -289,17 +289,39 @@ changeName(greet); */
 
 
 
-// ** Callback asincrono, que empiezan y tarda un tiempo para terminar su tarea.
+/* // ** Callback asincrono, que empiezan y tarda un tiempo para terminar su tarea.
 function greet(){
    console.log('Hello world')
 }
 
-setTimeout(greet, 3000);
+setTimeout(greet, 3000); // Establece una temporizador que ejecuta una función en un determinado tiempo */
+
+
+/* const URL = 'wmedia.es/juan.jpg';
+
+function descargar(url, fn){
+   console.log('Descargando ... ' + url)
+   setTimeout(function(){
+      //Fingiendo una tarea asincrona, es decirm que consume un tiempo y no bloquea
+      console.log('Descargado: ' + url)
+      
+      setTimeout(() => {
+         fn(url)
+      }, 1000);
+   }, 3000)
+;}
+
+function procesar(archivo){
+   console.log('Procesando ... ' + archivo)
+}
+
+descargar(URL, procesar); */
 
 
 
 
 
+// clase 12 -> THIS - Call, apply y bind ======================================================== 
 
 
 
