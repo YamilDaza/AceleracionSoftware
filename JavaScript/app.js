@@ -322,10 +322,46 @@ descargar(URL, procesar); */
 
 
 // clase 12 -> THIS - Call, apply y bind ======================================================== 
+/* var nombre = 'Juan';
+function saludar(){
+   console.log(this.nombre);
+};
+
+saludar(); */
 
 
+/* // ** #Ejemplo1:
+var nombre = 'Yamil';
+const persona = {nombre: 'Belen'};
+
+function saludar(momento){
+   console.log(`Hola ${this.nombre} ${momento}`);
+}
+
+//saludar(); // Tiene el contexto de windows como THIS
+saludar.call(persona, 'Buenas noches'); //Tiene el contexto que le pasamos como THIS -> const persona = {nombre : 'Belen'};
+saludar.apply(persona, ['Buenos Dias']); //Ejemplo #2 */
 
 
+// ** #Ejemplo3: Perder el contexto de THIS cuando tenemos una función dentro de otra. 
+/* Forma de recuperar el contexto de THIS:
+#A -> creando una constante con el contexto de THIS: const _this = this;
+#B -> creando una arrow function, ya que no tienen contexto de THIS y tomar el del superior -> () => {this....} 
+#C -> En caso de tener una función declarada, podemos usar el prototipo BIND -> .bind(THIS) */
+var nombre = 'Juan';
+
+const objeto = {
+   nombre: 'Andres',
+   saludar(){
+      // const _this = this; // #A
+      setTimeout(function() {
+         // console.log(_this.nombre);
+         console.log(this.nombre)
+      }.bind(this), 1000); // Con el BIND hereda el contexto de THIS de saludar
+   }
+}
+
+objeto.saludar();
 
 
 

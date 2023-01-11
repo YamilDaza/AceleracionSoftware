@@ -140,7 +140,11 @@
 
 
 ## THIS - Call, bind y apply ------------------------------------------------------------------------------
-
+   - El concepto de this puede ser confuso, ya que es dinámico y depende del contexto de ejecución.
+   - THIS es una referencia a algo.
+   - Call -> Es un prototipo de las funciones, es para darle el valor de THIS que queremos. Ejemplo #1
+   - Apply -> Pasarle un valor de THIS pero lo argumentos pasarle un tipo de datos iterable. Ejemplo #2
+   - Podemos perder el contexto de THIS cuando tenemos una función dentro de otra. Ejemplo #3
 
 
 
