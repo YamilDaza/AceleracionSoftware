@@ -123,6 +123,24 @@
    - EXPRESIONES FUNCIONALES INMEDIATAMENTE INVOCABLES
    - Lo parte más importante es inmediatamente.
    - Para crear un IIFE debemos envolver una function con el operador de agrupación -> (function(){})
+   - La principal utilidad de un IIFE es la auto-creación de un ámbito funcional, nuevo e independiente.
+
+
+
+
+
+## CALLBACKS ------------------------------------------------------------------------------
+   - Los callbaks son una función que se pasa a otra función como argumento para ejecución posterior. 
+   - Recordar que ARGUMENTO es lo que le pasamos a una función en la invocación. ejemplo -> funcion(datos.., otraFuncion)
+   - Existen callbaks sincronicos y asincronicos.
+   - Podemos llamar a un callback en su argumento como -> fn, call, callback, cb, funct.
+
+
+
+
+
+
+
 
 
 

@@ -242,9 +242,68 @@ d(); //Valor 1 */
 
 
 // clase 10 -> IIFE ======================================================== 
-(function(){
+//Tambien se puede usar con arrow function.
+/* (function(name){
    //Haz cosas...
-})();
+   console.log('Hello world, welcome ' + name)
+})('Developer');
+
+// Ejemplo con bucle FOR:
+for (let i = 0; i < 10; i++) {
+   console.log(i); //0, 1, 2, 3, 4...
+
+   setTimeout(function(){
+      console.log('El numero es ' + i);
+   },1000)
+   
+} */
+
+
+
+
+
+
+// clase 11 -> CALLBACKS ======================================================== 
+/* function miFuncion(fn){ //Fn es la función recibida como parametro y pasado como argumento en su invocación
+   const nombre = 'Yamil'
+   fn(nombre); //Invocación de la función pasado como argumento - callback
+}
+
+//Función pasado como argumento
+function saludar(nombre){
+   console.log('Hello ' + nombre);
+}
+miFuncion(saludar); */
+
+
+//Ejemplo 2:
+/* function greet(name){
+   alert(`Hi ${name}, Nice to meet yout`);
+   console.log(`Hi ${name}, Nice to meet yout`);
+}
+function changeName (fn) {
+   const name = prompt('What is you name?');
+   fn(name)
+}
+changeName(greet); */
+
+
+
+// ** Callback asincrono, que empiezan y tarda un tiempo para terminar su tarea.
+function greet(){
+   console.log('Hello world')
+}
+
+setTimeout(greet, 3000);
+
+
+
+
+
+
+
+
+
 
 
 
