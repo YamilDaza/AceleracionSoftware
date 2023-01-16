@@ -348,7 +348,7 @@ saludar.apply(persona, ['Buenos Dias']); //Ejemplo #2 */
 #A -> creando una constante con el contexto de THIS: const _this = this;
 #B -> creando una arrow function, ya que no tienen contexto de THIS y tomar el del superior -> () => {this....} 
 #C -> En caso de tener una función declarada, podemos usar el prototipo BIND -> .bind(THIS) */
-var nombre = 'Juan';
+/* var nombre = 'Juan';
 
 const objeto = {
    nombre: 'Andres',
@@ -361,7 +361,93 @@ const objeto = {
    }
 }
 
-objeto.saludar();
+objeto.saludar(); */
+
+
+
+
+
+
+// clase 13 -> Array ======================================================== 
+/* Creación de array */
+/* const dias = ['Lunes','Martes','Miércoles','Jueves'];
+console.log(dias); // Imprime el contenido completo del array
+console.log(dias[0]); // Imprime el primer elemento del array
+console.log(dias[dias.length -1]); // Imprime el ultimo elemento del array */
+
+// Agregar una propiedad a un array
+// const tags = ['Terror', 'Aventura', 'Suspense']
+// tags.valoracion = 'Execlente';
+// console.log(tags);
+
+// Metodo para agregar un elemento y/o eliminar desde cualquier indice -> Splice(indiceParaAgregar, cuantoQueremosCorrer, datoParaAgregar);
+/* tags.splice(1, 0, 'Gore');
+console.log(tags) */
+
+// Formas de vaciar un array:
+// tags = []; //TypeError: Error al referenciar a otro tipo de dato en una CONSTANTE. 
+
+/* 2da forma correcta:
+tags.length = 0;
+console.log(tags); */
+
+
+/* 3er forma correcta:
+tags.splice(0, tags.length);
+console.log(tags) */
+
+
+//Array dimensionales:
+/* const libros = [['It', 7], ['El Terror', 9], ['Up', 10]];
+
+// const terror = libros[1][0]; //Acceder al terror
+// const precio = libros[1][1]; //Acceder al precio
+
+
+//Desestructuración de array:
+// const [it, elTerror, laUp] = libros; // Desestructuración.
+// console.log(it);
+
+const [, [titulo, precio]] = libros // Desestructuracion de algo en particular
+console.log(titulo);
+console.log(precio);
+
+//Desestructuracion con parametros REST
+const [it, ...resto] = libros;
+console.log(it);
+console.log(resto); */
+
+
+
+//Ejercicio con API:
+
+const API = 'https://randomuser.me/api/?results=7';
+
+async function getData(){
+   const response = await fetch(API);
+   const { results } = await response.json();
+   showUsers(results);
+}  
+
+function showUsers(users){
+   console.log(users);
+   users.forEach(user => {
+      const picture = user.picture.medium;
+      const name = user.name.first;
+      
+      const img = document.createElement('img');
+      const nombre = document.createElement('h2');
+      const caja = document.createElement('div');
+      nombre.innerHTML = name;
+      img.src = picture;
+
+      caja.append(img,nombre)
+
+      document.body.appendChild(caja);
+   });
+}
+
+getData();
 
 
 

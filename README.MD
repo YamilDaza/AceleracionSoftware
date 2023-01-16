@@ -150,6 +150,37 @@
 
 
 
+## Array - 2 Claves para entender los arreglos ------------------------------------------------------------------------------
+   
+   - ¿Qué son los arrays? -> Es una estructura de datos ordenada por indices unicos. Su tipo de dato que almacena es homgenea, es decir, tiene que ser el mismo tipo de dato. Son objetos recortados.
+   - Ejemplo -> const nombreArray = [elemento1, elemento2, elemento N..];
+   - Podemos acceder a los elementos del array por medio de su indice unico. Empieza de 0 a N..
+   - Metodo length -> Nos devuelve la cantidad de elementos de un array
+   - Podemos agregar propiedades a los array -> const tags = [elemento1, elemento 2] ; tags.valoracion = 'excelente'; NO ES RECOMENDADO
+   - Podemos tener array dimensionales. Array dentro de otro array, lo importante es saber referirse a su indice -> const libros = [[], []];
+   - Desestructuración de arreglos -> const [elementos...] = array;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
