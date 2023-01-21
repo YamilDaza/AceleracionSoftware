@@ -421,7 +421,7 @@ console.log(resto); */
 
 //Ejercicio con API:
 
-const API = 'https://randomuser.me/api/?results=7';
+/* const API = 'https://randomuser.me/api/?results=7';
 
 async function getData(){
    const response = await fetch(API);
@@ -448,6 +448,24 @@ function showUsers(users){
 }
 
 getData();
+ */
+
+
+
+
+
+
+
+// Clase 14 -> Manipulando Array ======================================================== 
+console.log('Manipulando array');
+
+const arr = ['Red', 'Blue', 'Green'];
+console.log(arr.pop()); //Extrae el ultimo elemento del array
+
+console.log(arr.push('Black')); //Agrega un elemento al final
+console.log(arr);
+
+
 
 
 

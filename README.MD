@@ -1,7 +1,7 @@
 # Curso JavaScript - Wmedia por Juan Andrés Núñez.
 
 
-## Las variables en JS -----------------------------------------------------------------
+## CLASE 1 ->  Las variables en JS -----------------------------------------------------------------
 
    ### ¿Qué son?
       Una variables es caja que contiene un dato que podemos usar o modificar. Es importante declarar nuestras variables con nombres declarativos, es decir, nombres representativos segun el dato a almacenar.
@@ -25,7 +25,7 @@
 
 
 
-## Alzado o Hoisting -----------------------------------------------------------------
+## CLASE 2 ->  Alzado o Hoisting -----------------------------------------------------------------
    - JavaScript es un lenguaje con tipado dinamico, es decir, podemos asignar y reasignar diferentes tipos de datos a una misma variable.
    - Para hacerlo tenemos que utilizar dos fases diferentes: declaración e inicialización.
       * var nombreVariable -> Declaración
@@ -43,14 +43,14 @@
 
 
 
-## Variable let y Ambito -----------------------------------------------------------
+## CLASE 3 ->  Variable let y Ambito -----------------------------------------------------------
    - El ambito es la limitación de una variable, es decir, donde comienzan y terminan su uso. Tenemos ambitos de bloque {} y ambitos global, que esta por fuera de las funciónes o entre llaves {}.
    - Las variables declaradas con let tienen un AMBITO de bloque. Este ambito tiene ventajas como por ejemplo poder usar bucles y no mantener valores erroneos.
    - Las variables declaradas con LET no tienen HOISTING o ALZADO
 
 
 
-## Variable CONST -------------------------------------------------------------------
+## CLASE 4 ->  Variable CONST -------------------------------------------------------------------
    - Son declaración de variables con la diferencia que nuestro dato almacenado no varia durante la ejecucion del programa, por eso es el nombre de CONSTANTE.
    - Cuando asignamos un tipos de datos primitivos a una constante, su valor NO PUEDE ser reasignado durante la ejecución de nuestro programa, pero en cambio, cuanto asignamos tipos de datos compuestos, como por ejemplo objetos array, etc, ahi si podemos modificar el contenido del tipo de dato pero no cambiaria el dato asignado a la CONSTANTE
    - Las variables creadas con Const NO TIENEN hoisting asi como var o function, y su ambito es de BLOQUE al igual que let.
@@ -58,7 +58,7 @@
 
 
 
-## Parámetro y Argumentos -----------------------------------------------------------------
+## CLASE 5 ->  Parámetro y Argumentos -----------------------------------------------------------------
    *Parámetros*
    - Todas las functiones pueden tener parametros
    - Los parámetros son accesibles como variables en el cuerpo de la función
@@ -74,7 +74,7 @@
 
 
 
-## Funciones en JavaScript -----------------------------------------------------------------
+## CLASE 6 ->  Funciones en JavaScript -----------------------------------------------------------------
    - En JavaScript hay 3 formas de crear funciones:
       1) Funciones declaradas, estas requieren un identificador y son alzadas -> function identificadorUnico_Nombre(parametro o no){};
       2) Expresión funcional, que consiste en asociar una funcion en una variable. No son alzadas. -> const identificador = function (){};
@@ -83,7 +83,7 @@
 
 
 
-## Parametros y Argumentos REST -----------------------------------------------------------------
+## CLASE 7 ->  Parametros y Argumentos REST -----------------------------------------------------------------
    - Con los parámetros REST podemos aceptar cualquier numero de parámetros en una función.
    - Estos parámetros REST deben declararse al final de los parametros habituales. -> function nombre(parametro1, parametro2, ...todosLosParametros){}
    - Los parametros REST siempre los veras dentro de los parametros de una función.
@@ -94,14 +94,14 @@
 
 
 
-## Return Valor ------------------------------------------------------------------------------
+## CLASE 8 ->  Return Valor ------------------------------------------------------------------------------
    - A no ser que seamos explicitos, las funciones JavaScript retornan undefined(*implicit return*)
    - Ahora bien, si especificamos algo que retornar, la función realiza la tarea para la que fue creada y retorna dicho valor.
 
 
 
 
-## CLOSURES ------------------------------------------------------------------------------
+## CLASE 9 ->  CLOSURES ------------------------------------------------------------------------------
    - Es una caracteristica de JavaScript, es importante entenderlo para lograr tener el beneficio de los CLOSURES.
    - CLOSURE: es retornar una función dentro otra función con acceso al entorno de variables de un ámbito exterior. Esto quiere decir que yo puedo retornar una función dentro de otra, y puedo usar las variables que esten por encima de la función que retornar(función hija).
 
@@ -119,7 +119,7 @@
 
 
 
-## IIFE ------------------------------------------------------------------------------
+## CLASE 10 ->   IIFE ------------------------------------------------------------------------------
    - EXPRESIONES FUNCIONALES INMEDIATAMENTE INVOCABLES
    - Lo parte más importante es inmediatamente.
    - Para crear un IIFE debemos envolver una function con el operador de agrupación -> (function(){})
@@ -129,7 +129,7 @@
 
 
 
-## CALLBACKS ------------------------------------------------------------------------------
+## CLASE 11 ->  CALLBACKS ------------------------------------------------------------------------------
    - Los callbaks son una función que se pasa a otra función como argumento para ejecución posterior. 
    - Recordar que ARGUMENTO es lo que le pasamos a una función en la invocación. ejemplo -> funcion(datos.., otraFuncion)
    - Existen callbaks sincronicos y asincronicos.
@@ -139,7 +139,7 @@
 
 
 
-## THIS - Call, bind y apply ------------------------------------------------------------------------------
+## CLASE 12 ->  THIS - Call, bind y apply ------------------------------------------------------------------------------
    - El concepto de this puede ser confuso, ya que es dinámico y depende del contexto de ejecución.
    - THIS es una referencia a algo.
    - Call -> Es un prototipo de las funciones, es para darle el valor de THIS que queremos. Ejemplo #1
@@ -150,7 +150,7 @@
 
 
 
-## Array - 2 Claves para entender los arreglos ------------------------------------------------------------------------------
+## CLASE 13 ->  Array - 2 Claves para entender los arreglos ------------------------------------------------------------------------------
    
    - ¿Qué son los arrays? -> Es una estructura de datos ordenada por indices unicos. Su tipo de dato que almacena es homgenea, es decir, tiene que ser el mismo tipo de dato. Son objetos recortados.
    - Ejemplo -> const nombreArray = [elemento1, elemento2, elemento N..];
@@ -163,7 +163,12 @@
 
 
 
-
+## CLASE 14 ->  Manipulando array ------------------------------------------------------------------------------
+   *Metodo array:*
+   - array.push(...items) – agrega ítems al final,
+   - array.pop() – extrae un ítem del final,
+   - array.shift() – extrae un ítem del inicio,
+   - array.unshift(...items) – agrega ítems al principio.
 
 
 
