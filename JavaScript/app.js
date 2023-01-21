@@ -457,19 +457,59 @@ getData();
 
 
 // Clase 14 -> Manipulando Array ======================================================== 
-console.log('Manipulando array');
 
-const arr = ['Red', 'Blue', 'Green'];
-console.log(arr.pop()); //Extrae el ultimo elemento del array
+/* const arr1 = ['One','Two','Three','Four'];
+// Método para añadir un elemento al inicio de nuestro array:
+arr1.unshift('Nuevo Item'); //Dentro de los parentesis podemos agregar cualquier tipo de dato
+console.log(arr1); 
 
-console.log(arr.push('Black')); //Agrega un elemento al final
-console.log(arr);
+//Método para añadir un elemento al final de nuestro array:
+arr1.push('UltimoItem');
+console.log(arr1);
+
+//Método para extraer el ultimo elemento de nuestro array, es decir, devuelve el ultimo elemento y lo podemos guardar en una variable
+const ultimoElemento = arr1.pop();
+console.log(ultimoElemento); //Deberia imprimir UltimoItem
+
+//Método para extraer el primer elemento de nuestro array. Igual que el metodo POP(), podemos usar su valor de retorno.
+const primerElemento = arr1.shift();
+console.log(primerElemento); //Deberia imprimir NuevoItem */
 
 
+// Operador Spread: Añadir un elemento al inicio de un array sin mutar el array original.
+/* const colores = ['RED','BLUE','GREEN'];
+const colores2 = ['ORANGE', ...colores];
+console.log(colores);
+console.log(colores2);
+
+// Operador Spread: Añadir un elemento al final de un array sin mutar el array original.
+const colores3 = [...colores2, 'BLACK'];
+console.log(colores3);
+ */
 
 
+// Método Splice, para añadir en cualquier lugar del array mutando al array original
+/* const colores = ['RED','BLUE','GREEN'];
+const nuevoColor = 'BLACK';
+colores.splice(2, 0, nuevoColor);
+colores.splice(1, 1, 'WHITE', 'PINK'); // -> ['RED', 'WHITE', 'PINK', 'BLACK', 'GREEN'];
+console.log(colores); */
 
+// Método Slice, para añadir en cualquier lugar del array SIN mutar el array original
+const colores = ['red','blue','green'];
+const colores2 = [
+   ...colores.slice(0,2), //Red and Blu
+   'Yellow',
+   ...colores.slice(2), //Green
+]
+console.log(colores2);
 
+//Método para saber si esta o no un elemento PRIMITIVO en nuestro array. Si esta devuelve si posicion, es decir, su indice, sino devuelve -1.
+const IsColour = colores.indexOf('red'); //Indice 0
+console.log(IsColour);
+
+//Otro Método es includes, esto devuelve true o false. Solo importa saber si esta o no, no le importa el indice. Lo podemos usar para Strings o arrays.
+console.log(colores.includes('Red')); //False
 
 
 

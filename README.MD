@@ -164,14 +164,26 @@
 
 
 ## CLASE 14 ->  Manipulando array ------------------------------------------------------------------------------
-   *Metodo array:*
+   *Métodos array:*
    - array.push(...items) – agrega ítems al final,
+   - array.unshift(...items) – agrega ítems al principio.
    - array.pop() – extrae un ítem del final,
    - array.shift() – extrae un ítem del inicio,
-   - array.unshift(...items) – agrega ítems al principio.
 
+   *Método para añadir elementos al inicio sin mutar el array podemos usar el operador spread:*
+   - ArrayNuevo = [DATO,...arrayACopiar];
 
+   *Método para añadir elementos en cualquier indice y mutar el Array podemos usar el método SPLICE*
+   - Array.splice(inicioDePosicion, hastaDondeAñadir, dato);
 
+   *Método para añadir elementos en cualquier indice y NO mutar el Array podemos usar el método SLICE*
+   - Array.slice(inicioParaExtraer, hastaDondeExtraer);
+
+   *Método para encontrara elementos PRIMIVITOS es utiizar indexOf. Devuelve el indice si lo encuentra, sino -1.*
+   - Arr.indexOf('Dato')
+
+   *Método para encontrara elementos es includes(). Devuelve solo true o false, si esta o no esta, no el indice.*
+   - arr.includes('dato');
 
 
 
