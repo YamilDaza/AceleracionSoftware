@@ -539,10 +539,90 @@ console.log(newColors); */
 
 
 // Método JSON -> stringify y parse
-const copia = JSON.stringify(colores);
+/* const copia = JSON.stringify(colores);
 console.log(copia); //String
 
 const copia2 = JSON.parse(copia);
-console.log(copia2); //Lo convierte a un objeto JS NATIVO
+console.log(copia2); //Lo convierte a un objeto JS NATIVO */
 
+
+
+
+// Clase 15 -> Filter, Reduce, Sort, Map y forEach ======================================================== 
+/* let employees = [ //Employees = empleados
+   {name: 'John', salary: 90000, hireDate: 'July 1, 2010'},
+   {name: 'David', salary: 75000, hireDate: 'August 15, 2009'},
+   {name: 'Ana', salary: 80000, hireDate: 'December 12, 2011'},
+]; */
+
+//FOREACH:
+// employees.forEach((employee, index) => console.log(`Employee: ${index + 1} - ${employee.name}`));
+
+
+
+//FILTER:
+/* const employeesSalary = employees.filter(employee => employee.salary > 75000);
+console.log(employeesSalary); */
+
+
+
+//MAP: 
+/* const upperCaseName = employees.map(employee => employee.name.toLocaleUpperCase());
+console.log(upperCaseName); */
+
+//MAP EJEMPLO 2:
+/* const employeesTier = employees.map(employee => {
+   return {
+      name: employee.name,
+      tier: employee.salary > 75000 ? 'high' : 'mid',
+   }
+})
+console.log(employeesTier);
+ */
+
+
+//SORT: Ordenar los elementos de un array:
+/* const numbers = [1,2,3,7,5,6,4,8,9,10];
+numbers.sort((num1,num2) => {
+   return num1 - num2
+   if(num1 < num2){
+      return -1
+   }else if(num1 > num2){
+      return 1
+   }else{
+      return 0
+   } 
+});
+console.log(numbers); */
+
+/* let employees = [ //Employees = empleados
+   {name: 'John', salary: 90000, hireDate: 'July 1, 2010'},
+   {name: 'David', salary: 75000, hireDate: 'August 15, 2009'},
+   {name: 'Ana', salary: 80000, hireDate: 'December 12, 2011'},
+]; */
+//Ordenar por salario: a - b orden ascendente != b - a orden descendente
+// console.log(employees.sort((a, b) => a.salary - b.salary));
+
+
+
+//REDUCE:
+/* const total = [2,5,1,2,7,3].reduce((total, current) => {
+   console.log(total, current);
+   return total + current
+})
+console.log(total);
+
+const totalSalaries = employees.reduce((total, current) => total + current.salary, 0);
+console.log(totalSalaries); */
+
+
+//Practica :
+let employees = [ //Employees = empleados
+   {name: 'John', salary: 90000, hireDate: 'July 1, 2010'},
+   {name: 'David', salary: 75000, hireDate: 'August 15, 2009'},
+   {name: 'Ana', salary: 80000, hireDate: 'December 12, 2011'},
+];
+
+const totalHightier = employees.map(employee => employee.salary).filter(salary => salary > 75000).reduce((total, current) => total + current);
+console.log(totalHightier)
 

@@ -210,6 +210,16 @@
 
 
 
+## CLASE 15 ->  Filter, Reduce, Sort, Map y forEach ------------------------------------------------------------------------------
+   - forEach -> Ejecuta una funcion callback que se ejecuta en cada uno de los elementos de un array. Tambien acepta un valor opcional que es el index, indice de cada elemento de un array
+
+   - filter -> Es un método que retorna un nuevo array y no muta al array original. Lo que realiza filter es que FILTRAR por una condición cada una de los elementos del array.
+
+   - map -> Crea un nuevo array, con la misma longitud del array original a mapear, pero con ciertos cambios que le pasamos a una function por cada elemento del array.
+
+   - sort -> Sirve para ordenar los elementos de un array, no se le pasa una funcion porque automaticamente lo hace pero con string. Modifica el array original.
+
+   - reduce -> Pasa una funcion por cada uno de los elementos del array. tiene 2 valores: total(acumulado de todo lo que hacemos - es el primer elemento de nuestro array *TENER CUIDADO*, por eso debo pasarle un valor inicial al primer parametro en 0) y current(el que voy recorriendo).
 
 
 
