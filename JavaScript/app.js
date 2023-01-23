@@ -495,8 +495,9 @@ colores.splice(2, 0, nuevoColor);
 colores.splice(1, 1, 'WHITE', 'PINK'); // -> ['RED', 'WHITE', 'PINK', 'BLACK', 'GREEN'];
 console.log(colores); */
 
+
 // Método Slice, para añadir en cualquier lugar del array SIN mutar el array original
-const colores = ['red','blue','green'];
+/* const colores = ['red','blue','green'];
 const colores2 = [
    ...colores.slice(0,2), //Red and Blu
    'Yellow',
@@ -504,14 +505,44 @@ const colores2 = [
 ]
 console.log(colores2);
 
+
 //Método para saber si esta o no un elemento PRIMITIVO en nuestro array. Si esta devuelve si posicion, es decir, su indice, sino devuelve -1.
 const IsColour = colores.indexOf('red'); //Indice 0
 console.log(IsColour);
 
+
 //Otro Método es includes, esto devuelve true o false. Solo importa saber si esta o no, no le importa el indice. Lo podemos usar para Strings o arrays.
 console.log(colores.includes('Red')); //False
+colores.includes('white') ? console.log('The white color is') : console.log('The white color is not'); */
 
 
 
+//Método findIndex: Devuelve el indice si esta, sino devuelve -1
+const colores = [
+   {id: 0, color: 'blue'},
+   {id: 1, color: 'green'},
+   {id: 2, color: 'pink'},
+   {id: 3, color: 'green'},
+];
+
+/* const indice = colores.findIndex(item => item.color === 'green');
+console.log(indice);
+
+
+//Método find: Devuelve el elementos si esta, sino undefined.
+const isGreen = colores.find(item => item.color === 'green');
+console.log(isGreen);
+
+//Método filter:
+const newColors = colores.filter(item => item.color.length >= 5);
+console.log(newColors); */
+
+
+// Método JSON -> stringify y parse
+const copia = JSON.stringify(colores);
+console.log(copia); //String
+
+const copia2 = JSON.parse(copia);
+console.log(copia2); //Lo convierte a un objeto JS NATIVO
 
 

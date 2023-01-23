@@ -182,14 +182,29 @@
    *Método para encontrara elementos PRIMIVITOS es utiizar indexOf. Devuelve el indice si lo encuentra, sino -1.*
    - Arr.indexOf('Dato')
 
-   *Método para encontrara elementos es includes(). Devuelve solo true o false, si esta o no esta, no el indice.*
+   *Método para encontrara elementos es includes(). Devuelve solo true o false, si esta o no esta, no el indice, ni el valor mismo.*
    - arr.includes('dato');
 
+   *Método findIndex acepta un callback y devuelve el indice del primer elementos que cumpla con la condición del callback. Si cumple la condicion devuelve su indice, sino devuelve -1.*
+   - const indice = colores.findIndex(color => color.nombre = 'green');
 
+   **- indexOf: Devuelve el indice de array PRIMITIVOS != findIndex: Duvuelve el indice de array COMPUESTOS -**
 
+   *Ahora si queremos que nos devuelva en elemento en si, tenemos que usar el método find. Este método devuelve el elemento si esta, sino devuelve undefined.*
+   - const elemento = array.find(item = item.propiedad === dato)
 
+   *Método filter, devuelve un nuevo array sin mutar el original pasando una condicion en el callback*
+   - const newArray = array.filter(item => condicion);
 
+   *Métodos para la copia superficial de un array. Si los elementos del array son PRIMITIVOS, se hace la copia y no se muta el array original, pero si los elementos del array son tipos COMPUESTOS, se pasa la referencia y por lo tanto se puede mutar*
+   - Slice -> const copia = arrOriginal.slice();
+   - Spread -> const copia = [...arrOriginal]
+   - array.From -> const copia = Array.from(arrOriginal)
 
+   *Método JSON.stringify() -> convierte lo que esta pasado por parentesis en un string. Esto es limitado //ver mdn*
+   - const copia = JSON.stringify().
+
+   *Método JSON.parse() -> convierte lo que esta pasado por parentesis en un objeto nativo de JS //ver mdn*
 
 
 
