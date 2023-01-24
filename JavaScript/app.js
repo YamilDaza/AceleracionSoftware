@@ -518,12 +518,12 @@ colores.includes('white') ? console.log('The white color is') : console.log('The
 
 
 //Método findIndex: Devuelve el indice si esta, sino devuelve -1
-const colores = [
+/* const colores = [
    {id: 0, color: 'blue'},
    {id: 1, color: 'green'},
    {id: 2, color: 'pink'},
    {id: 3, color: 'green'},
-];
+]; */
 
 /* const indice = colores.findIndex(item => item.color === 'green');
 console.log(indice);
@@ -617,12 +617,65 @@ console.log(totalSalaries); */
 
 
 //Practica :
-let employees = [ //Employees = empleados
+/* let employees = [ //Employees = empleados
    {name: 'John', salary: 90000, hireDate: 'July 1, 2010'},
    {name: 'David', salary: 75000, hireDate: 'August 15, 2009'},
    {name: 'Ana', salary: 80000, hireDate: 'December 12, 2011'},
 ];
 
 const totalHightier = employees.map(employee => employee.salary).filter(salary => salary > 75000).reduce((total, current) => total + current);
-console.log(totalHightier)
+console.log(totalHightier); */
+
+
+
+
+// Clase 16 -> For of Lopp ======================================================== 
+/* const colors = ['Red', 'Blue', 'Yellow'];
+const results = [];
+
+//Imperativo -> Le decimos a la maquina COMO queremos que lo haga
+for (let i = 0; i < colors.length; i++) {
+   if(colors[i].length > 3){
+      results.push(colors[i]);
+   }
+}
+console.log(results);
+
+//Declarativa -> Se trata de que QUEREMOS 
+const results2 = colors.filter(color => color.length > 3);
+console.log(results2);
+
+//For of
+const results3 = [];
+for(const color of colors){
+   // console.log(color);
+   if(color.length > 3){
+      results3.push(color);
+   }
+}
+console.log(results3);
+
+//For of con String
+const fullName = 'Yamil Daza';
+for(const char of fullName){
+   console.log(char);
+}
+ */
+
+
+
+
+// Clase 17 -> Fusionar Arrays ======================================================== 
+const cats = ['Nino','Guizmo','Milo'];
+const moreCats = ['Tina', 'Moma', 'Mila'];
+console.log(...cats); //Extrae cada uno de los elementos del array
+
+//Fusionar
+const allCats = [...cats, ...moreCats];
+console.log(allCats);
+
+//Fusionar 2
+const mergeArrays = (...arrays) => [...arrays].flat();
+console.log(mergeArrays(cats, moreCats));
+
 

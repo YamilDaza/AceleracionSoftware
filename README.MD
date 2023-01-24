@@ -224,9 +224,14 @@
 
 
 
+## CLASE 16 ->  For of Loop ------------------------------------------------------------------------------
+   - Sentencia de bucles super potente
+   - Crea una sentencia iterable que descompone un Array o String en cada elemento.
+   - for(const item of array-String-etc) {}
+   - Break y Continue -> Break es para terminar. Continue es para pasar a la siguiente iteración
 
 
 
-
-
-
+## CLASE 17 ->  Fusionar Arrays ------------------------------------------------------------------------------
+   - Spread syntax(...) -> Trabaja en un elemento iterable y los descompone, es decir, extraer cada uno de los elementos
+   - .Concant -> Este método puede fusionar 2 o mas arrays: const nuevoArray = array1.concat(array2);
