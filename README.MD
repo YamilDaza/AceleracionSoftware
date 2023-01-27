@@ -235,3 +235,22 @@
 ## CLASE 17 ->  Fusionar Arrays ------------------------------------------------------------------------------
    - Spread syntax(...) -> Trabaja en un elemento iterable y los descompone, es decir, extraer cada uno de los elementos
    - .Concant -> Este método puede fusionar 2 o mas arrays: const nuevoArray = array1.concat(array2);
+
+
+
+## CLASE 18 ->  Comprobar si un valor en Array en JavaScript ------------------------------------------------------------------------------
+   - Hoy veremos: typeof, instanceof y isArray
+   * typeof: retorna un string que indica el tipo de dato que ponemos a lado derecho -> ejemplo typeof tipoDeDATO
+   * instanceof: comprueba si el prototipo es encontrado en el constructor del prototipo, esto devuelve un valor booleano, true o false -> myArray instanceof Array
+   * isArray: Este metodo determina si el valor que le pasamos es un array o no, retorna true o false. -> ejemplo: Array.isArray(myArray)
+
+
+
+
+
+
+
+
+
+
+

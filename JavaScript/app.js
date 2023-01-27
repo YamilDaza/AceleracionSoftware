@@ -666,7 +666,7 @@ for(const char of fullName){
 
 
 // Clase 17 -> Fusionar Arrays ======================================================== 
-const cats = ['Nino','Guizmo','Milo'];
+/* const cats = ['Nino','Guizmo','Milo'];
 const moreCats = ['Tina', 'Moma', 'Mila'];
 console.log(...cats); //Extrae cada uno de los elementos del array
 
@@ -676,6 +676,37 @@ console.log(allCats);
 
 //Fusionar 2
 const mergeArrays = (...arrays) => [...arrays].flat();
-console.log(mergeArrays(cats, moreCats));
+console.log(mergeArrays(cats, moreCats)); */
+
+
+
+
+// Clase 18 -> Comprobar si un valor es array en JavaScript ======================================================== 
+const myArray = [];
+console.log(typeof(myArray)); //Object
+console.log(myArray instanceof Array); //True is array
+console.log(Array.isArray(myArray)); //True is array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
