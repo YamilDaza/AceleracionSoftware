@@ -691,10 +691,10 @@ console.log(Array.isArray(myArray)); //True is array */
 
 
 
-// Clase 19 -> Objetos ======================================================== 
+// Clase 19 y 20 -> Objetos ======================================================== 
 
 // Declaración y asignación de objetos
-const user = {
+/* const user = {
    name: 'Yamil Daza',
    work: 'Backend developer',
    age: 24,
@@ -714,9 +714,16 @@ const userOne = {
 };
 
 console.log(user.name);
-console.log(userOne.hobbies.one);
+console.log(userOne.hobbies.one); */
 
+//Métodos en objetos, son funciones vivas en objetos:
+const user = {
+   name:'Yamil',
+   saludar: () => console.log(`Hi ${user.name}`), //Funciones flecha no tiene contexto de THIS pero si las funciones anonimas
+   age: 24,
+}
 
+user.saludar();
 
 
 
