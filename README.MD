@@ -246,7 +246,10 @@
 
 
 
-
+## CLASE 19 ->  Objetos ------------------------------------------------------------------------------
+   - Los objetos en JavaScript son estructuras en cuyo interior se guardan colecciones de pares propiedad-valor. Los objetos son muy comunes en JavaScript para usar el registro de datos de entidades. El valor almacenado en cualquier propiedad puede ser de valores primitivos hasta compuestos como arrays u objetos.
+   - Ejemplo: const nombreObjeto = {propiedad1: valor1, propiedad2:valor2}
+   - Los objetos a diferencia de los arrays tienen identificadores unicos(propiedad), por eso el orden no es tan importante.
 
 
 

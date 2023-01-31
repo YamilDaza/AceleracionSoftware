@@ -682,16 +682,39 @@ console.log(mergeArrays(cats, moreCats)); */
 
 
 // Clase 18 -> Comprobar si un valor es array en JavaScript ======================================================== 
-const myArray = [];
+/* const myArray = [];
 console.log(typeof(myArray)); //Object
 console.log(myArray instanceof Array); //True is array
-console.log(Array.isArray(myArray)); //True is array
+console.log(Array.isArray(myArray)); //True is array */
 
 
 
 
 
+// Clase 19 -> Objetos ======================================================== 
 
+// Declaración y asignación de objetos
+const user = {
+   name: 'Yamil Daza',
+   work: 'Backend developer',
+   age: 24,
+};
+
+//Valores compuestos:
+const userOne = {
+   name: 'Yamil Daza',
+   work: 'Developer',
+   stack: [1,2,3],
+   hobbies: {
+      one: 'Music',
+      two: 'Drums',
+      three: 'Soccer',
+   },
+   isWorking: false,
+};
+
+console.log(user.name);
+console.log(userOne.hobbies.one);
 
 
 
