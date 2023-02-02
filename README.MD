@@ -260,6 +260,15 @@
 
 
 
+## CLASE 21 ->  La clave para entender los objetos y THIS en JS ------------------------------------------------------------------------------
+   - Es muy común querer acceder al interior de un objeto desde un método. Para ello tenemos THIS.
+   - This se evalúa durante la ejecución(runtime), es decir, es DINAMICO.
+   - CALL: este método podemos asignar el valor de THIS
+
+
+
+
+
 
 
 

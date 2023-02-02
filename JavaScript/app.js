@@ -717,23 +717,46 @@ console.log(user.name);
 console.log(userOne.hobbies.one); */
 
 //Métodos en objetos, son funciones vivas en objetos:
-const user = {
+/* const user = {
    name:'Yamil',
    saludar: () => console.log(`Hi ${user.name}`), //Funciones flecha no tiene contexto de THIS pero si las funciones anonimas
    age: 24,
 }
 
-user.saludar();
+user.saludar(); */
 
 
 
 
 
+// Clase 21 -> La clave para entender los objetos y THIS en JavaScript ======================================================== 
+/* const user = {
+   name: 'yamil',
+   greet(){
+      console.log(`Hi, I'm ${this.name}`)
+   }
+}
+user.greet(); */
+
+// This dinamico
+const user = {
+   name: 'yamil',
+   greet,
+}
+
+const user2 = {
+   name: 'Belen'
+}
 
 
+function greet(){
+   console.log(`Hello ${this.name}`)
+}
+user.greet(); // THIS === USER
+greet(); // THIS === WINDOW
 
-
-
+// Call
+greet.call(user2); //THIS === USER . Con este método le indicamos cual es el valor de THIS
 
 
 
