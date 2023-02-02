@@ -13,7 +13,7 @@ p1
 
 
 //Practice 1:
-let x = 10;
+/* let x = 10;
 
 const p = new Promise((resolve, reject) => {
    if(x == 10){
@@ -25,7 +25,28 @@ const p = new Promise((resolve, reject) => {
 
 p
    .then((res) => res)
-   .catch((err) => err)
+   .catch((err) => err) */
+
+
+
+//Practica 2
+let x = 10;
+
+console.log('1-Iniciando proceso...');
+const p = new Promise((resolve, reject) => {
+   setTimeout(() => {
+      x = x + 10 * 2;
+      console.log('2-Proceso terminado...')
+      setTimeout(() => {
+         resolve(x)
+      },1000)
+   },2000)
+})
+
+p
+   .then(res => console.log('3.El resultado es ' + res))
+
+
 
 
 
