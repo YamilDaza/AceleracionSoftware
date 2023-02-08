@@ -1,0 +1,42 @@
+body{
+   background-color: #8843f2;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+section{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+input{
+   width: 50vw;
+   padding: 10px;
+   outline: none;
+   border: 5px solid #ccd1e4;
+   font-weight: 600;
+}
+
+#list_colour{
+   font-size: 30px;
+   margin-top: 20px;
+   list-style: none;
+   font-weight: 600;
+   color: #ddd;
+   text-align: center;
+}
+
+li{
+   margin: 5px 0;
+}
+
+.filtro{
+   display: none;
+}
+
+
+
+
+
